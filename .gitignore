@@ -1,8 +1,9 @@
 gradle.properties
 .gradle/
 build/
-.project
-.classpath
-.settings/
+/.project
+/.classpath
+/.settings/
 /bin/
 .idea/
+/target/
