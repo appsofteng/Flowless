@@ -168,7 +168,7 @@ public class VirtualFlow<T, C extends Cell<T, ?>> extends Region implements Virt
         this.getStyleClass().add("virtual-flow");
         this.items = items;
         this.orientation = orientation;
-        this.cellListManager = new CellListManager<>(this, items, cellFactory);
+        this.cellListManager = new CellListManager<T, C>(this, items, cellFactory);
         this.gravity.set(gravity);
         MemoizationList<C> cells = cellListManager.getLazyCellList();
         this.sizeTracker = new SizeTracker(orientation, layoutBoundsProperty(), cells);
